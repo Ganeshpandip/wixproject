@@ -1,0 +1,251 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    width: 100%;
+    background-color: white;
+
+}
+/* navbar start */
+nav{
+    width: 100%;
+    height: 15vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    /* box-shadow:5px 5px 15px grey; */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+
+}
+.headingdiv{
+    width: fit-content;
+    height:50px ;
+    /* background-color: aliceblue; */
+    display: flex;
+    align-items: center;
+    justify-content:  space-between;
+}
+.headingdiv .box{
+    width: 15px;
+    height: 15px;
+    background-color: #0050FF;   
+}
+.headingdiv h1{
+    text-transform: capitalize;
+}
+.headingdiv h3{
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.headingdiv a{
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+}
+nav ul li button{
+    width: 80px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    font-size: medium;
+
+}
+nav ul li{
+    display: inline;
+    padding: 10px;
+
+}
+nav button:hover,.active{
+    color: #1961FF;
+}
+/* navbar end */
+.mainbox{
+    width: 100%;
+    height: fit-content;
+    background-color:  #e6dace;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+.heading-box{
+    width: 100%;
+    height: 250px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.box{
+    width: 20px;
+    height: 20px;
+    background-color: #0050FF;
+}
+.heading-box h1{
+    font-size: 38px;
+    text-transform: capitalize;
+}
+.sub-heading{
+    width: 750px;
+    height: 100px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sub-heading h1{
+    text-transform: capitalize;
+}
+.sub-heading button{
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: #0050FF;
+    font-size: medium;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+}
+.sub-heading button:hover{
+    background-color: white;
+    border: 2px solid  #0050FF;
+}
+.content{
+    width: 750px;
+    height: 400px;
+    background-color: white;
+    display: flex;
+}
+.part1{
+    width: 40%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 90px 50px;
+}
+.part1 h1{
+    font-size: x-large;
+    color: #0050FF;
+}
+.part1 h3{
+    font-weight: 400;
+}
+.part1 h4{
+    font-weight: 300;
+}
+.part2{
+    width: 60%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.content2{
+    width: 750px;
+    height: 550px;
+    background-color: white;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.skill{
+    width: 100%;
+    height: 40%;
+    /* background-color: aqua; */
+    padding-left: 40px;
+}
+.skill h1{
+    font-size: 28px;
+}
+.grid{
+    width: 80%;
+    height: 80%;
+    display: grid;
+    /* background-color: black; */
+    grid-template-columns: 1fr 1fr;
+    /* gap: 5px ; */
+}
+.g-box1,.g-box2,.g-box3,.g-box4{
+    /* background-color: salmon; */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+.grid h3{
+    font-weight: 100;
+    font-size: medium;
+}
+.mini-box{
+    width: 13px;
+    height: 13px;
+    background-color: #0050FF;
+}
+/* footer strat */
+.footer-box{
+    width: 100%;
+    height: 15vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.grid-box{
+    width: 500px;
+    height: 60%;background-color: transparent;
+    display: grid;
+    grid-template-areas: 'b1 b1 b1 b1 b2 b2 b2 b2 b3 b3 b3 b3 '
+                         'b4 b4 b4 b4 b5 b5 b5 b5 b6 b6 b6 b6  ';
+    gap: 10px;
+    padding: 10px;
+}
+.footer-box h1{
+    font-size: smaller;
+    font-weight: 350;
+    padding: 0PX 50px;
+}
+.box1{
+    grid-area: b1;
+}
+.box2{
+    grid-area: b2;
+}
+.box3{
+    grid-area: b3;
+}
+.box4{
+    grid-area: b4;
+}
+.box5{
+    grid-area: b5;
+}
+.box6{
+    grid-area: b6;
+    display: flex;
+    gap: 15px;
+}
+.grid-box h3{
+    font-size:small ;
+    padding-left: 30px;
+    text-transform: capitalize;
+}
+/* footer end */
